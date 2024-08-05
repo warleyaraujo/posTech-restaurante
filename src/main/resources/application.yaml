@@ -1,0 +1,28 @@
+#Swagger
+springdoc:
+  swagger-ui:
+    path: /documentacao
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://dpg-cmqh6b2cn0vc73do0ing-a.oregon-postgres.render.com/restaurante_a7q4
+    username: restaurante_a7q4_user
+    password: qPrLpJKa5OJzqHNqnSQg6I4CjHx95VmW
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+    generate-ddl: false
+# Logger configuration
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+# Server configuration
+server:
+  port: 8080
